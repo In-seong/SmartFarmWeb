@@ -12,7 +12,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-		<table border="1" class="table table-success table-striped">
+		<table border="1">
 				<tr>
 					<th width="10%">온도</th>
 					<td width="30%">습도</td>

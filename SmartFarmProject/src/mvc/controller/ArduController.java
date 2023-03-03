@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import mvc.model.HTDAO;
 import mvc.model.HTDTO;
+import mvc.model.MemberDAO;
 
 @WebServlet("*.do")
 public class ArduController extends HttpServlet {
@@ -31,6 +32,10 @@ public class ArduController extends HttpServlet {
 			selHT(request);
 			request.getRequestDispatcher("/test.jsp").forward(request, response);
 		}
+		if(command.equals("/login.do")) {
+			loginCheck(request);
+			request.getRequestDispatcher("#").forward(request, response);
+		}
 		
 	}
 	
@@ -40,5 +45,8 @@ public class ArduController extends HttpServlet {
 		System.out.println(dto.getHum()+"3");
 		request.setAttribute("dto", dto);
 	}
+	
+	public void loginCheck(HttpServletRequest request) {
 
+	}
 }
