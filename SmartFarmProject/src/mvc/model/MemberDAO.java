@@ -7,7 +7,7 @@ public class MemberDAO extends JDBCConnect {
 	public int loginCheck(String Id) { // 기존 회원 확인
 
 		int result = 0;
-		String sql = "select * from member";
+		String sql = "select * from user";
 		try {
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);

@@ -25,7 +25,7 @@ public class JDBCConnect {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			String url = "jdbc:mysql://3.38.21.49:3306/test?useSSL=false";
+			String url = "jdbc:mysql://3.38.21.49:3306/RollingFarm?useSSL=false";
 			String id = "master_user";
 			String pwd = "1234";
 			
